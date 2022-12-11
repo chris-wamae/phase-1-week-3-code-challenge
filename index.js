@@ -19,3 +19,7 @@ function fetchMovies(){
                 document.getElementById("movie-poster");
                    img.src =
                 films.poster;
+                let showTime =
+                document.getElementById("showtime");
+                  showTime.textContent =
+                films.showtime;
