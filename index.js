@@ -23,3 +23,7 @@ function fetchMovies(){
                 document.getElementById("showtime");
                   showTime.textContent =
                 films.showtime;
+                let runTime =
+                document.getElementById("runtime");
+                  runTime.textContent =
+                `${films.runtime} Minutes`;
