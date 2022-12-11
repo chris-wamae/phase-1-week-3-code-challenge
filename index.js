@@ -27,3 +27,12 @@ function fetchMovies(){
                 document.getElementById("runtime");
                   runTime.textContent =
                 `${films.runtime} Minutes`;
+                let tickets =
+              document.querySelector("div#ticket-counter");
+                    tickets.textContent = films["capacity"] - films["tickets_sold"]
+                })
+                document.querySelector("ul#films").appendChild(li)
+               
+            })
+        })
+    }fetchMovies()
