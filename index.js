@@ -51,3 +51,15 @@ function fetchMovies(){
       })
       }
       baseMovie()
+
+      function buyTicket(){
+        let button = document.querySelector("button#buy-ticket")
+        button.addEventListener("click",function(){
+        let currentLi = document.querySelector("div#ticket-counter")
+        let number = parseInt(currentLi.textContent)
+        if(number > 0){
+        currentLi.textContent = currentLi.textContent -1}
+        else{document.querySelector("button#buy-ticket").textContent = "TICKETS SOLD OUT"
+      }
+        })}
+      buyTicket()
