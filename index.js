@@ -15,3 +15,7 @@ function fetchMovies(){
                  document.getElementById("movie-title");
                     title.textContent =
                 films.title;
+                let img =
+                document.getElementById("movie-poster");
+                   img.src =
+                films.poster;
