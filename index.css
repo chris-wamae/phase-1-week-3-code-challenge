@@ -1,2 +1,20 @@
-img {width:200px;
-     height:200px;}
+img {width:400px;
+     height:300px;}
+h1{
+text-align: center;
+}
+
+
+
+div#movie-display{
+ position: relative;
+ left:500px;
+ top:-400px;
+}
+
+section#movie-tickets{
+     position: relative;
+     left:700px;
+     top:-550px;
+
+}
