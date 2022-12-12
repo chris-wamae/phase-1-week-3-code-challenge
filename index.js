@@ -21,15 +21,17 @@ function fetchMovies(){
                 document.getElementById("movie-poster");
                    img.src =
                 films.poster;
-//Adds a movies poster to the DOM when the movie title is clicked
+//Adds a movies showtime to the DOM when the movie title is clicked
                 let showTime =
                 document.getElementById("showtime");
                   showTime.textContent =
                 films.showtime;
+//Adds a movies runtime to the DOM when the movie title is clicked
                 let runTime =
                 document.getElementById("runtime");
                   runTime.textContent =
                 `${films.runtime} Minutes`;
+//Adds a movies tickets to the DOM when the movie title is clicked
                 let tickets =
               document.querySelector("div#ticket-counter");
                     tickets.textContent = films["capacity"] - films["tickets_sold"]
@@ -39,7 +41,7 @@ function fetchMovies(){
             })
         })
     }fetchMovies()
-
+//Adds the first movie to the DOM to be added when the page loads
     function baseMovie(){ fetch(baseUrl)
       .then(response => response.json())
       .then(data => {
@@ -55,6 +57,7 @@ function fetchMovies(){
       }
       baseMovie()
 
+//Reduces the amount of tickets in the tickets counter when the buy movies button is clicked
       function buyTicket(){
         let button = document.querySelector("button#buy-ticket")
         button.addEventListener("click",function(){
